@@ -93,12 +93,12 @@ Aplikasi ini memiliki 2 jenis pengguna yaitu :
 5. Mahasiswa memasukkan Data Skripsi dan kode bimbingan yang telah didapatkan dari dosen
 6. Mahasiswa dan Dosen melakukan aktifitas bimbingan
 
-   6.1. Pembimbing menginputkan instruksi & komentar pada mahasiswa
-   6.2. Mahasiswa menjalankan instruksi yang telah diberikan pembimbing (offline)
-   6.3. Mahasiswa memposting hasil pekerjaan
-   6.4. Pembimbing memvalidasi hasil pekerjaan apakah sudah sesuai atau tidak
-   6.5. Pembimbing memberikan instruksi lanjut pada mahasiswa
-   6.6. kembali ke langkah a hingga skripsi selesai
+   1. Pembimbing menginputkan instruksi & komentar pada mahasiswa
+   2. Mahasiswa menjalankan instruksi yang telah diberikan pembimbing (offline)
+   3. Mahasiswa memposting hasil pekerjaan
+   4. Pembimbing memvalidasi hasil pekerjaan apakah sudah sesuai atau tidak
+   5. Pembimbing memberikan instruksi lanjut pada mahasiswa
+   6. kembali ke langkah a hingga skripsi selesai
 
 ### Spesifikasi Aplikasi ###
 
