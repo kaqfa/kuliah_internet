@@ -76,12 +76,12 @@ untuk memperlancar komunikasi dan mempermudah dokumentasi dalam pembuatan skrips
 
 Aplikasi ini memiliki 2 jenis pengguna yaitu :
 1. Pembimbing: dapat mendaftarkan diri dan mengisikan biodata serta keahlian yang dimiliki.
-  Setelah mendaftar pembimbing memiliki kode bimbingan yang diberikan kepada mahasiswa yang
-  akan dibimbing agar dapat enrol ke pembimbing tersebut.
+   Setelah mendaftar pembimbing memiliki kode bimbingan yang diberikan kepada mahasiswa yang
+   akan dibimbing agar dapat enrol ke pembimbing tersebut.
 2. Mahasiswa: mendaftarkan diri dan mengisi biodata serta topik skripsi yang sedang dikerjakan.
-  Setelah mendaftar mahasiswa harus enrol ke salah satu pembimbing dengan menggunakan kode
-  bimbingan yang diberikan oleh pembimbing. Setelah enrol mahasiswa tersebut baru dapat
-  melakukan aktfitas bimbingan.
+   Setelah mendaftar mahasiswa harus enrol ke salah satu pembimbing dengan menggunakan kode
+   bimbingan yang diberikan oleh pembimbing. Setelah enrol mahasiswa tersebut baru dapat
+   melakukan aktfitas bimbingan.
 
 ### Workflow Penggunaan Aplikasi ###
 
@@ -91,12 +91,12 @@ Aplikasi ini memiliki 2 jenis pengguna yaitu :
 4. Mahasiswa melakukan registrasi
 5. Mahasiswa memasukkan Data Skripsi dan kode bimbingan yang telah didapatkan dari dosen
 6. Mahasiswa dan Dosen melakukan aktifitas bimbingan
-   a. Pembimbing menginputkan instruksi & komentar pada mahasiswa
-   b. Mahasiswa menjalankan instruksi yang telah diberikan pembimbing (offline)
-   c. Mahasiswa memposting hasil pekerjaan
-   d. Pembimbing memvalidasi hasil pekerjaan apakah sudah sesuai atau tidak
-   e. Pembimbing memberikan instruksi lanjut pada mahasiswa
-   f. kembali ke langkah a hingga skripsi selesai
+  a. Pembimbing menginputkan instruksi & komentar pada mahasiswa
+  b. Mahasiswa menjalankan instruksi yang telah diberikan pembimbing (offline)
+  c. Mahasiswa memposting hasil pekerjaan
+  d. Pembimbing memvalidasi hasil pekerjaan apakah sudah sesuai atau tidak
+  e. Pembimbing memberikan instruksi lanjut pada mahasiswa
+  f. kembali ke langkah a hingga skripsi selesai
 
 ### Spesifikasi Aplikasi ###
 
