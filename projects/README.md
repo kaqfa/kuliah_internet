@@ -16,6 +16,7 @@ calon pemilih juga dapat memposting berita tentang caleg yang bersangkutan. Namu
 untuk menghindarkan kampanye hitam yang berlebihan, hanya link dari website
 berita saja yang boleh dipostingkan.
 
+### Deskripsi Pengguna ###
 
 Aplikasi ini memiliki 2 jenis pengguna yaitu:
 
@@ -26,6 +27,12 @@ Aplikasi ini memiliki 2 jenis pengguna yaitu:
 2. Calon Pemilih (Voter) : Mendaftarkan diri dan memilih tempat domisilinya. Selain
 	dapat mencari informasi tentang caleg yang sesuai, jenis pengguna ini juga dapat 
 	memposting berita yang berhubungan dengan caleg tersebut.
+
+### Workflow Penggunaan Aplikasi ###
+
+
+
+### Spesifikasi Aplikasi ###
 
 Adapun spesifikasi lengkap yang harus ada pada aplikasi yang dibuat adalah 
 sebagai berikut:
@@ -52,7 +59,47 @@ sebagai berikut:
   memberikan pemberitaan yang seimbang untuk caleg tersebut
 
 
+
 ## Proyek 2 : Bimbingan Skripsi Online ##
+
+Aplikasi berbasis web yang dapat digunakan oleh mahasiswa skripsi dan pembimbingnya
+untuk memperlancar komunikasi dan mempermudah dokumentasi dalam pembuatan skripsi.
+
+
+### Deskripsi Pengguna ###
+
+Aplikasi ini memiliki 2 jenis pengguna yaitu :
+1 Pembimbing: dapat mendaftarkan diri dan mengisikan biodata serta keahlian yang dimiliki.
+  Setelah mendaftar pembimbing memiliki kode bimbingan yang diberikan kepada mahasiswa yang
+  akan dibimbing agar dapat enrol ke pembimbing tersebut.
+2 Mahasiswa: mendaftarkan diri dan mengisi biodata serta topik skripsi yang sedang dikerjakan.
+  Setelah mendaftar mahasiswa harus enrol ke salah satu pembimbing dengan menggunakan kode
+  bimbingan yang diberikan oleh pembimbing. Setelah enrol mahasiswa tersebut baru dapat
+  melakukan aktfitas bimbingan.
+
+### Workflow Penggunaan Aplikasi ###
+
+1 Pembimbing melakukan registrasi
+2 Pembimbing mendapatkan kode bimbingan
+3 Pembimbing memberikan kode bimbingan pada calon mahasiswa bimbingan (offline)
+4 Mahasiswa melakukan registrasi
+5 Mahasiswa memasukkan Data Skripsi dan kode bimbingan yang telah didapatkan dari dosen
+6 Mahasiswa dan Dosen melakukan aktifitas bimbingan
+  a. Pembimbing menginputkan instruksi & komentar pada mahasiswa
+  b. Mahasiswa menjalankan instruksi yang telah diberikan pembimbing (offline)
+  c. Mahasiswa memposting hasil pekerjaan
+  d. Pembimbing memvalidasi hasil pekerjaan apakah sudah sesuai atau tidak
+  e. Pembimbing memberikan instruksi lanjut pada mahasiswa
+  f. kembali ke langkah a hingga skripsi selesai
+
+### Spesifikasi Aplikasi ###
+
+Adapun spesifikasi yang harus ada pada aplikasi bimbingan skripsi online ini adalah:
+
+- Pembimbing dan Mahasiswa dapat melakukan registrasi
+- Pembimbing dan Mahasiswa dapat melakukan login dengan menggunakan email dan password
+- Setelah melakukan registrasi pembimbing mendapatkan kode bimbingan untuk diberikan
+  pada calon
 
 
 ## Proyek 3 : Medical Center ##
