@@ -1,4 +1,8 @@
-# Proyek Akhir Mata Kuliah Pemrograman Internet #
+# Proyek Akhir Pemrograman Internet #
+
+Halaman ini memuat deskripsi proyek akhir untuk mata kuliah Pemrograman Internet.
+Meski demikian, bagi pembaca yang tertarik untuk melakukan proyek tersebut, boleh
+juga mencobannya.
 
 
 ## Proyek 1 : Legislative Track Record ##
