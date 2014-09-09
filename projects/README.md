@@ -5,6 +5,7 @@ Meski demikian, bagi pembaca yang tertarik untuk melakukan proyek tersebut, bole
 juga mencobannya.
 
 
+
 ## Proyek 1 : Legislative Track Record ##
 
 Aplikasi web yang digunakan oleh calon legislatif untuk mempromosikan dirinya
@@ -40,8 +41,7 @@ Aplikasi ini memiliki 2 jenis pengguna yaitu:
 
 ### Spesifikasi Aplikasi ###
 
-Adapun spesifikasi lengkap yang harus ada pada aplikasi yang dibuat adalah 
-sebagai berikut:
+Adapun spesifikasi yang harus ada pada aplikasi yang dibuat adalah sebagai berikut:
 
 - Caleg dan Voter dapat melakukan registrasi
 - Caleg dan Voter dapat melakukan login untuk menambahkan profil dan posting
@@ -106,11 +106,83 @@ Adapun spesifikasi yang harus ada pada aplikasi bimbingan skripsi online ini ada
 - Pembimbing dan Mahasiswa dapat melakukan registrasi
 - Pembimbing dan Mahasiswa dapat melakukan login dengan menggunakan email dan password
 - Setelah melakukan registrasi pembimbing mendapatkan kode bimbingan untuk diberikan
-  pada calon
+  pada calon mahasiswa bimbingan
+- Setelah registrasi mahasiswa harus memasukkan kode bimbingan untuk masuk ke dalam
+  kelompok bimbingan dosen yang dimaksud
+- Dosen dapat melihat siapa saja mahasiswa yang masuk ke dalam bimbingannya
+- Mahasiswa dapat melihat judul skripsi apa saja milik mahasiswa lain yang telah dibimbing
+  oleh dosen yang bersangkutan
+- Dosen dapat memberikan instruksi yang harus dikerjakan oleh mahasiswa
+- Instruksi berupa deskripsi teks dan dapat diberikan tambahan upload berkas (gambar atau dokumen)
+- Mahasiswa dapat men-submit hasi pekerjaan pada halaman instruksi yang diberikan
+- Submit hasil pekerjaan berupa upload berkas yang diberi tambahan teks deskripsi
+- Dosen dapat memberikan komentar atas hasil pekerjaan yang telah di-submit mahasiswa
+- Dosen dapat memvalidasi pekerjaan mahasiswa yang menandakan instruksi telah selesai
+  dilaksanakan mahasiswa dengan baik
+- Mahasiswa dapat melihat seluruh instruksi baik yang sudah dikerjakan maupun yang belum dikerjakan
+- Mahasiswa dapat melihat seluruh hasil pekerjaannya yang telah di-submit sebelumnya
+- Dosen dapat melihat progres masing-masing mahasiswa bimbingannya secara detail
+
 
 
 ## Proyek 3 : Medical Center ##
 
+Aplikasi berbasis web yang digunakan untuk memberikan prediksi kemungkinan penyakit serta obatnya
+berdasarkan gejala-gejala yang diinputkan. Hanya dokter yang menginputkan kemungkinan penyakit
+beserta gejala-gejalanya, sedangkan pengguna umum hanya dapat melihat dan melakukan eksplorasi pada
+basis data penyakit yang telah diinputkan.
+
+### Deskripsi Pengguna ###
+
+Aplikasi ini hanya memiliki 1 (satu) jenis pengguna yang berhak login yaitu Dokter saja. Seorang
+dokter harus mendaftar dan login terlebih untuk sebelumnya dapat menginputkan kemungkinan penyakit
+dan gejala yang menyertainya.
+
+Adapun pengguna lain adalah pengguna umum yang tidak perlu melakukan login dan dapat langsung mencari
+kemungkinan penyakit berdasarkan gejala yang dirasaknnya.
+
+### Workflow Penggunaan Aplikasi ###
+
+1. Dokter melakukan registrasi dan Login
+2. Dokter menginputkan deskripsi penyakit 
+    1. Dokter menginputkan nama penyakit kemudian search untuk memastikan penyakit tersebut belum
+       diinputkan sebelumnya.  
+    2. Jika penyakit belum ada, Dokter menginputkan beberapa gejala penyakit 
+       (jumlah gejala yang diinputkan unlimited), diikuti inputan deskripsi penyakit dan obatnya
+    3. Jika penyakit sudah ada, Dokter dapat melihat deskripsinya dan melakukan edit jika diperlukan
+3. Pengguna melakukan browse pada 10 penyakit terbaru dan 10 penyakit yang paling banyak diderita
+   oleh pengguna lain.
+4. Pengguna melakukan search penyakit berdasarkan nama penyakit
+5. Pengguna melakukan deteksi penyakit dengan menginputkan gejala yang dirasakan
+6. Aplikasi mencocokkan gejala dengan basis data dan menampilkan informasi tentang penyakit yang
+   sesuai dengan gejala tersebut
+
+### Spesifikasi Aplikasi ###
+
+Adapun spesifikasi yang harus ada pada aplikasi medical center ini adalah:
+
+- Dokter dapat melakukan registrasi
+- Dokter dapat melakukan login
+- Dokter dapat mencari daftar penyakit yang sudah ditambahkan
+- Dokter dapat menambahkan daftar penyakit baru
+- Data penyakit baru yang diinputkan adalah :
+  - Nama Penyakit
+  - Deskripsi Penyakit
+  - List Gejala
+  - Obat atau penanganan
+  - Tingkat kewaspadaan (Ringan, Sedang, Berat, Parah)
+- List gejala dapat dihubungkan dengan penyakit
+- Dokter dapat mengetahui histori list penyakit yang telah diinputkannya
+- Dokter dapat mengetahui histori list gejala yang telah diinputkannya 
+- Pengguna dapat mencari penyakit apa saja yang memiliki suatu gejala
+  misalkan pengguna satu gejala "Batuk", maka aplikasi dapat menampilkan
+  semua penyakit yang memiliki gejala batuk
+- Pengguna dapat menampilkan informasi 10 penyakit yang paling banyak dicari
+- Pengguna dapat menampilkan informasi 10 penyakit yang terakhir diinputkan
+- Pengguna dapat mengetahui siapa dokter yang menginputkan data penyakit tertentu
+- Pengguna dapat mengetahui 10 dokter yang paling banyak menginputkan data penyakit
+
+ 
 
 ## Proyek 4 : Complaint it Up ##
 
