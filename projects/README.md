@@ -186,5 +186,71 @@ Adapun spesifikasi yang harus ada pada aplikasi medical center ini adalah:
 
 ## Proyek 4 : Complaint it Up ##
 
+Aplikasi berbasis web yang dapat digunakan konsumen untuk melakukan komplain terhadap
+apapun, baik terhadap perusahaan, instansi pendidikan, pemerintah, keamanan, dan lain
+sebagainya. Data komplain tersebut akan disimpan dan diteruskan ke instansi terkait
+sebagai masukan.
+
+
+### Deskripsi Pengguna ###
+
+Aplikasi ini memiliki 2 jenis pengguna yaitu:
+
+1. Konsumen: setelah mendaftarkan diri dan login, konsumen dapat menuliskan komplain
+   terhadap apapun yang diinginkannya. Saat menuliskan komplain, konsumen dapat 
+   menampilkan profilnya secara jelas atau hanya menampilkan data anonim saja.
+2. Instansi: pengguna instansi tidak dapat menuliskan komplain, tapi dapat membaca
+   ringkasan komplain secara terstruktur sesuai dengan kategori instansi tersebut.
+
+
+### Workflow Penggunaan Aplikasi ###
+
+1. Konsumen melakukan registrasi
+2. Konsumen melakukan login ke dalam aplikasi
+3. Konsumen menuliskan komplain terhadap sesuatu. 
+4. Pengunjung umum dapat mengeksplorasi 20 komplain terbaru
+5. Pengunjung dapat mengeksplorasi komplain berdasarkan kategori tertentu
+6. Instansi melakukan registrasi, dengan menginputkan data Nama Instansi dan 
+   kategori Instansi (boleh lebih dari 1)
+7. Instansi melakukan login ke dalam aplikasi
+8. Instansi dapat melihat komplain yang sesuai dengan kategorinya
+9. Instansi mendapatkan notifikasi komplain yang secara khusus ditujukan kepada
+   instansinya.
+10. Instansi dapat mengomentari komplain yang secara khusus ditujukan kepada
+    instansinya.
+11. Konsumen dapat  membaca komentar yang diberikan instansi terkait terhadap
+    komplain yang diberikan
+
+
+### Spesifikasi Aplikasi ###
+
+Adapun spesifikasi yang harus ada pada aplikasi Complain It Up adalah:
+
+- Konsumen dan Instansi dapat melakukan registrasi
+- Konsumen dan Instansi dapat melakukan login
+- Konsumen dapat menuliskan komplain. Adapun data komplain yang harus
+  disimpan ke dalam basis data adalah:
+  - Judul komplain
+  - Konten komplain
+  - Kategori (boleh lebih dari satu)
+  - Instansi yang dikomplain (opsional)
+  - Tampilkan secara anonim atau tidak
+- Konsumen dapat melihat data komplain yang pernah ditulisnya
+- Instansi dapat melihat komplain yang sesuai dengan kategori instansinya
+- Instansi mendapatkan notifikasi khusus jika ada komplain yang spesifik
+  ditujukan ke instansi tersebut
+- Instansi dapat memberikan komentar pada komplain yang spesifik
+  ditujukan ke instansi tersebut
+- Konsumen dapat membaca komentar dari instansi yang dikomplain sebelumnya
+- Komplain dapat ditampilkan perkategori
+- Pengguna dapat mencari komplain berdasarkan kategori, nama instansi, judul,
+  dan konten komplain
+- Konsumen dan instansi dapat memberikan rating +1 dan -1 untuk semua komplain
+- Aplikasi dapat menampilkan ringkasan komplain berdasarkan:
+  - 20 komplain terbaru
+  - 20 dengan rating tertinggi
+  - 20 komplain dengan rating terendah
+  
+
 
 ## Proyek 5 : Job House ##
