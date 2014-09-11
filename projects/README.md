@@ -4,6 +4,30 @@ Halaman ini memuat deskripsi proyek akhir untuk mata kuliah Pemrograman Internet
 Meski demikian, bagi pembaca yang tertarik untuk melakukan proyek tersebut, boleh
 juga mencobannya.
 
+Beberapa deskripsi proyek sengaja dibuat tidak terlalu spesifik untuk memberikan
+keleluasaan pada mahasiswa untuk lebih berkreasi membuat program. Selain itu, 
+spesifikasi yang disebutkan pada list proyek adalah spesifikasi teknis, artinya
+spesifikasi desain dan kemudahan program harus sesuai kreatifitas masing-masing
+mahasiswa dan masuk pada poin penilaian.
+
+Untuk memudahkan perancangan antarmuka, mahasiswa boleh mendownload dan 
+memodifikasi template HTML, CSS, dan Javascript yang ada di Internet dengan 
+menyertakan URL asal template didownload pada bagian footer.
+
+Spesifikasi yang tercantum adalah spesifikasi minimal dan mahasiswa harus menambahkan
+beberapa fitur pendukung meskipun tidak tercantum pada spesifikasi, sampai pada taraf
+kepantasan sebuah aplikasi yang layak publish di Internet.
+
+Setelah jadi, aplikasi diupload pada hosting masing-masing (gratis maupun berbayar)
+dan source code-nya diupdate secara teratur pada github.com. Pastikan pada saat 
+penilaian, source code dan aplikasi yang diunggah adalah versi final terakhir.
+
+Tugas ini adalah tugas kelompok, tapi penilaiannya adalah mandiri. Artinya, mungkin saja
+satu kelompok ada yang mendapat nilai A dan ada yang mendapat nilai C sesuai dengan 
+kontribusinya dan kemampuan menjawab pada saat presentasi. Untuk lebih mudahnya
+pada README.md halaman masing-masing, sebutkan formasi anggota kelompok dan 
+peran masing-masing anggota kelompok.
+
 
 
 ## Proyek 1 : Legislative Track Record ##
@@ -250,7 +274,81 @@ Adapun spesifikasi yang harus ada pada aplikasi Complain It Up adalah:
   - 20 komplain terbaru
   - 20 dengan rating tertinggi
   - 20 komplain dengan rating terendah
-  
+
 
 
 ## Proyek 5 : Job House ##
+
+Aplikasi berbasis web yang digunakan untuk mempublikasikan data lowongan pekerjaan
+dan juga memberikan kesempatan pencari kerja untuk mendaftar dan memberikan 
+kualifikasinya secara online
+
+
+### Deskripsi Pengguna ###
+
+Ada 2 Jenis pengguna pada aplikasi Job House ini:
+
+1. Perusahaan: setelah melakukan registrasi dan login, perusahaan dapat mempostingkan
+   lowongan pekerjaan beserta kualifikasi yang diinginkan serta jumlah yang dikehendaki.
+   Setelah semua lowongan terisi, perusahaan dapat menandainya "Terisi".
+2. Pekerja: setelah melakukan registrasi dan login, pekerja dapat mengirimkan kualifikasinya
+   ke perusahaan yang membuka lowongan pekerjaan. Selain itu, pekerja juga dapat mengomentari
+   dan bertanya tentang lowongan pekerjaan yang belum jelas deskripsinya.
+
+Selain kedua jenis pengguna tersebut, tentu  saja pengguna umum dapat sekedar melihat
+semua lowongan pekerjaan yang diposting pada aplikasi ini.
+
+
+### Workflow Penggunaan Aplikasi ###
+
+1. Perusahaan melakukan registrasi
+2. Perusahaan melakukan login ke dalam aplikasi
+3. Perusahaan memposting lowongan pekerjaan
+4. Pengguna umum mengeksplore lowongan pekerjaan
+5. Pekerja melakukan registrasi dan login ke dalam aplikasi
+6. Pekerja mengisikan curriculum vitae dan kualifikasinya
+7. Pekerja mengomentari dan bertanya pada halaman lowongan pekerjaan yang masih
+   kurang jelas deskripsinya
+8. Pekerja memasukkan lamaran dengan mengirimkan curriculum vitae
+9. Perusahaan dapat melihat curriculum vitae dari semua pekerja yang melamar untuk
+   lowongan pekerjaan tertentu
+10. Perusahaan menerima calon pekerja yang paling cocok dengan kualifikasi
+11. Pekerja yang lamarannya diterima, mendapat notifikasi
+12. Setelah perusahaan mendapatkan pelamar yang cocok dan sesuai dengan jumlah yang
+    dikehendaki, lowongan pekerjaan otomatis dilabeli sebagai "Terisi"
+
+
+### Spesifikasi Aplikasi ###
+
+Adapun spesifikasi yang harus ada pada aplikasi Job House ini adalah:
+
+- Perusahaan dan Pekerja dapat melakukan registrasi
+- Data yang harus di simpan pada registrasi perusahaan adalah:
+  - Nama Perusahaan
+  - Alamat Perusahaan
+  - Email & Telepon Resmi Perusahaan
+  - Deskripsi Perusahaan
+  - Jenis pekerjaan yang terdapat pada perusahaan (bisa lebih dari 1)
+- Sedangkan data pekerja yang harus diberikan pada saat registrasi adalah:
+  - Nama Lengkap
+  - Kota, Propinsi, dan alamat lengkap
+  - Kontak Email, Telepon, dan Handphone
+  - Pendidikan terakhir
+  - Skill dan Keahlian (boleh lebih dari satu)
+  - Dokumen dan skill pendukung
+- Perusahaan dapat melakukan posting lowongan pekerjaan, dengan data yang harus dicantumkan:
+  - Nama Pekerjaan
+  - Deskripsi Pekerjaan
+  - Kualifikasi yang diperlukan
+  - Jenis pekerjaan (Tetap, Kontrak, Freelance)
+  - Jumlah orang yang diperlukan
+  - Sudah terisi atau belum
+- Pengguna umum dapat mengeksplore semua pekerjaan tanpa harus login terlebih dahulu
+- Pengguna umum dapat melakukan pencarian terhadap pekerjaan sesuai dengan kata kunci
+- Pekerja dan perusahaan dapat mengomentari (bertanya & menjawab) lowongan pekerjaan 
+  yang belum jelas deskripsinya
+- Pekerja dapat mengajukan lamaran pada lowongan pekerjaan tertentu
+- Perusahaan dapat melihat semua lamaran pekerjaan yang masuk
+- Perusahaan dapat memilih dan menerima sebagian dari lamaran yang masuk
+- Apabila perusahaan telah menerima lamaran sesuai dengan lowongan yang diposting,
+  aplikasi harus secara otomatis memberikan label "Lowongan Sudah Terisi" pada lowongan tersebut.
