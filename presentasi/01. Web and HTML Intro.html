@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Pemrograman Internet [1]</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<style type="text/css">
+			.reveal code{ color: #a8ffb0;}
+			.reveal table {
+			  margin: auto;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			}
+
+			.reveal table th {
+			  font-weight: bold;
+			}
+
+			.reveal table th,
+			.reveal table td {
+			  text-align: left;
+			  padding: 0.2em 0.5em 0.2em 0.5em;
+			  border-bottom: 1px solid;
+			}
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Pemrograman Internet</h1>
+					<h3>Pengenalan Web dan HTML</h3>
+					<p>
+						<small>Created by <a href="http://fahrifirdaus.web.id">Fahri Firdausillah</a> </small>
+					</p>
+				</section>
+
+<section data-markdown data-markdown data-separator="^\n---\n$" data-vertical="^\n--\n$">
+	<script type="text/template">
+		## Yang Terlewat di Kontrak Belajar
+
+		Materi untuk mata kuliah pemrograman Internet adalah:
+
+		- HTML 5, CSS 3, Javascript (sebelum UTS)
+		- PHP yang terkoneksi MySQL (setelah UTS)
+
+		<hr />
+		
+		Sebagai tambahan:
+
+		- PHP Object Oriented
+		- Javascript & CSS Framework (Twitter Bootstrap)
+
+		--
+
+		## Yang Terlewat di Kontrak Belajar
+
+		Untuk mempermudah aktivitas perkuliahan, kita menggunakan:
+
+		- WhatsApp: untuk komunikasi instan (08989987517)
+		- Edmodo: untuk manajemen kelas dan penugasan (qaefw7)
+		- Github: untuk sharing materi &amp; source code (https://github.com/kaqfa/net-prog.git)
+
+		<hr />
+
+		Mahasiswa diwajibkan untuk memiliki hosting sendiri (gratis atau berbayar),
+		untuk menampilkan hasil real web dari tugas. <!-- .element: class="fragment" data-fragment-index="1" -->
+
+		Agar saya bisa melihat source code-nya
+		secara online, mahasiswa harus juga meng-upload source code aplikasinya pada
+		versioning system seperti 
+		Github, 
+		BitBucket, 
+		GoogleCode, 
+		SourceForge, dll. <!-- .element: class="fragment" data-fragment-index="2" -->
+
+		---
+
+		## Tugas Besar UTS &amp; UAS
+
+		Ada 2 tugas besar (kelompok) untuk mata kuliah ini:
+
+		- *Tugas Besar UTS:* Membuat desain antarmuka aplikasi dengan HTML, CSS, &amp; JS
+		- *Tugas Besar UAS:* Membuat aplikasi lengkap dan dinamis dengan PHP &amp; MySQL
+
+		<br />
+
+		Tugas kelompok terdiri dari maksimal 3 orang, silahkan daftarkan kelompok di 
+		file spreadsheet yang telah disiapkan.
+
+		--
+
+		## Tugas Besar UTS &amp; UAS
+
+		Saya telah menyiapkan 5 proyek yang digunakan untuk tugas besar mata kuliah ini.
+		Deskripsi lengkapnya dapat dilihat di github pada direktori "Projects".		
+
+		- Legislative Track Record
+		- Online Thesis Supervising
+		- Medical Center
+		- Complaint it Up
+		- Job House
+
+		Silahkan membentuk kelompok dulu, nanti
+		saya yang akan meng-assign proyek mana dikerjakan oleh kelompok berapa.
+
+		---
+
+		## Web Application Overview
+
+		Aplikasi berbasis web merupakan aplikasi yang dijalankan pada browser melalui jaringan.
+		Beberapa karakteristik aplikasi berbasis web adalah:
+
+		- URL driven: satu halaman ke halaman lain, diakses dengan menggunakan URL
+		- Terpusat di server, jika aplikasi di server berubah maka semua klien juga pasti berubah,
+			jika server *blackout* pastinya di klien juga
+		- Menggunakan beberapa tool pemrograman minimal HTML, CSS, Javascript, dan server side PL
+		- Beda browser yang digunakan untuk mengakses, ada kemungkinan tampilannya juga beda
+
+		--
+
+		## Web Application Architecture
+
+		![Arsitektur Web](./images/0460120103012.png) <!-- .element: height="400" -->
+
+		Gambar tersebut adalah contoh arsitektur web yang telah dilengkapi dengan web service.
+
+		---
+
+		## AMP (Apache, PHP, MySQL)
+
+		Untuk dapat mengembangkan aplikasi berbasis web dengan menggunakan PHP ada 3 software yang
+		harus kita install terlebih dahulu, yaitu Apache, PHP, dan MySQL.
+
+		- Apache: merupakan web server yang berfungsi untuk mengirimkan data yang tersimpan pada 
+			server ke client melalui port HTTP.
+		- PHP: Modul pemrograman yang digunakan untuk mem-parsing kode PHP ke dalam kode HTML yang 
+			dapat diterjemahkan ke dalam tampilan yang cantik oleh Web Browser.
+		- MySQL: Database server yang berguna untuk menyimpan data dalam bentuk relasional sehingga
+			nantinya dapat diolah dengan lebih mudah.
+
+		--
+
+		## AMP (Apache, PHP, MySQL)
+
+		Pada komputer pribadi, kita dapat dengan mudah menginstall paket AMP dengan aplikasi
+		seperti XAMPP atau Zend Server. Setelah menginstall program tersebut, kita tinggal 
+		meletakkan file aplikasi kita di direktori "htdocs" untuk dapat dijalankan.
+
+		![XAMPP Control Panel](./images/xamp_03.jpg) <!-- .element: height="350" -->
+
+		--
+
+		## AMP (Apache, PHP, MySQL)
+
+		Namun jika kita ingin aplikasi kita dapat diakses secara publik, kita harus meng-upload
+		aplikasi kita pada web host. Untungnya, banyak sekali web host yang gratis dan settingnya 
+		mudah seperti 000webhost.
+
+		![CPanel](./images/cpanel-tampilan.gif) <!-- .element: height="250" -->
+
+		Setelah terdaftar kita dapat menggunakan software FTP seperti FileZilla untuk mengupload data.
+
+		---
+
+		## Menyusun Web dengan HTML
+
+		### HTML 5 Standard dan Komponen-komponennya
+
+		---
+
+		## HTML5 vs HTML4
+
+		- HTML5 merupakan versi terbaru dari standard bahasa HTML, 
+		- sedangkan HTML4 merupakan standard HTML yang cukup banyak digunakan hingga saat ini
+		- HTML 5 banyak menitik beratkan pada peningkatan yang dimiliki oleh HTML UI dan UX
+		- HTML5 memiliki banyak tag baru seperti section, ```article```, ```header```, ```nav```, ```canvas```,
+			```video``` dan lain sebagainya.			
+		- Juga ada beberapa tag yang dihapuskan dari standard HTML5 seperti ```frame```, ```marque```, 
+			```blink```, dan ```font```.
+
+		---
+
+		## Aturan Standard Penulisan HTML5
+
+		- HTML5 harus diawali dengan <!DOCTYPE html>
+		- Kebanyakan tag HTML berpasangan seperti :
+			- ```<div> … </div>```
+			- ```<a href="…"> … </a>```
+		- Jika ada tag yang tidak berpasangan maka cara menulisnya adalah :
+			- ```<br /> bukan <br>```
+			- ```<img src="…" /> bukan <img src="…">```
+		- Setiap tag dapat memiliki attribut yang ditulis menggunakan huruf kecil dan nilainya diapit apostrof
+			- ```<img src="…" />, <a href="…"> … </a>```
+			- ```<link href="…"> … </link>, <p class="…"> … </p>```
+
+		--
+
+		### Aturan Standard Penulisan HTML5 (cont’d)		
+
+		- Semua yang berhubungan dengan format tampilan, dikendalikan dengan menggunakan CSS.
+		- Sehingga, beberapa tag berikut sudah dinyatakan obselete :
+			- `<b>`, `<i>`, `<center>`, `<big>`, `<font>`, dan tag format sejenis lainnya.
+		- Tag `<frame>` dan `<marque>` juga sudah dianggap obselete karena merusak arti (meaning) dari HTML.
+		- Namun karena standard HTML5 masih belum selesai, dan juga tidak ada browser yang 
+			mensupport penuh HTML5, untuk masa transisi tag-tag tersebut mungkin masih bisa 
+			diterjemahkan dengan baik oleh browser.
+
+		--
+
+		### Aturan Standard Penulisan HTML5 (cont’d)
+
+		Sebuah halaman HTML paling sederhana mengandung tag ```<html>```, ```<header>```, dan ```<body>```
+
+		```xml
+	<!DOCTYPE HTML>
+	<html>
+
+	<header>
+	   <title> .:Judul Website:. </title>
+	</header>
+
+	<body>
+	   <div>
+	      <p>The first paragraph of an HTML page.</p>
+	      <p>Here goes the second one.</p>
+	   </div>
+	</body>
+
+	</html>
+		```
+
+	</script>
+</section>
+
+<section>
+	<h2>Elemen <code>Body</code></h2>
+	<ul>
+		<li>Elemen <code>&lt;body&gt; … &lt;/body&gt;</code> merupakan letak elemen visual yang ditampilkan oleh browser.</li>
+		<li>Setiap elemen bisa diberikan atribut <code>"id"</code> dan <code>"class"</code>.</li>
+		<li>Beberapa contoh elemen yang bisa dituliskan di dalam elemen body adalah :</li>
+	</ul>
+
+	<table>
+		<tr>
+			<th>Tag Elemen</th>
+			<th>Kegunaan</th>
+		</tr>
+		<tr>
+			<td><code>&lt;div&gt; … &lt;/div&gt; </code></td>
+			<td>Container elemen lain pada satu baris sendiri</td>
+		</tr>
+		<tr>
+			<td><code>&lt;p&gt; … &lt;/p&gt; </code></td>
+			<td>Container text 1 paragraf</td>
+		</tr>
+		<tr>
+			<td><code>&lt;nav&gt; … &lt;/nav&gt; </code></td>
+			<td>Container untuk navigasi</td>
+		</tr>
+		<tr>
+			<td><code>&lt;h1&gt; … &lt;/h1&gt; </code></td>
+			<td>Text header (judul) tersedia dari H1 s/d H6</td>
+		</tr>
+		<tr>
+			<td><code>&lt;article&gt; … &lt;/article&gt; </code></td>
+			<td>Container untuk bagian artikel</td>
+		</tr>
+		<tr>
+			<td><code>&lt;header&gt; … &lt;/header&gt; </code></td>
+			<td>Container untuk bagian header</td>
+		</tr>
+		<tr>
+			<td><code>&lt;footer&gt; … &lt;/footer&gt; </code></td>
+			<td>Container untuk bagian footer</td>
+		</tr>
+	</table>
+
+</section>
+
+				<section data-markdown>
+          <script type="text/template">
+## Elemen `Body` (cont)
+
+| Tag Elemen    			| Kegunaan      |
+| -------------				|:-------------:|
+| `<ol> … </ol>`     	| (ordered list) Membuat numbering |
+| `<ul> … </ul>`     	| (unordered list) Membuat bullet |
+| `<li> … </li>` 			| List yang digunakan pada UL dan OL |
+| `<table> </table>` 	| Membuat tabel |
+| `<tr> … </tr>` 			| Menyisipkan baris pada tabel |
+| `<td> … </td>` 			| Menyisipkan kolom pada tabel |
+| `<br />` 						| Ganti baris |
+| `<hr />` 						| Menyisipkan garis horizontal |
+| `<a href=“”>…</a>` 	| Membuat link pada teks atau gambar |
+| `<img src=“” />` 		| Memasukkan gambar pada halaman web |
+| `<pre> … </pre>` 		| Teks di antara tag tersebut ditampilkan tanpa format |
+
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+## Elemen `Head`
+
+- Sebaliknya elemen <head> … </head> digunakan untuk menuliskan elemen yang 
+	tidak ditampilkan secara visual oleh web browser, namun informasinya penting
+	untuk perangkat lunak lain seperti web-crawler.
+- Beberapa contoh elemen yang bisa dituliskan di dalam elemen header adalah :
+
+-----
+
+| Tag Elemen    			| Kegunaan      |
+| -------------				|:-------------:|
+| `<title> … </title>`     	| Mendefinisikan judul dari dokumen |
+| `<link> … </link>`     		| Biasanya digunakan untuk memasukkan CSS |
+| `<meta> … </meta>`     		| Mendefinisikan metadata halaman tersebut |
+| `<script> … </ script>`   | Biasanya digunakan untuk memasukkan JS |
+| `<style> … </syle>`     	| Menuliskan CSS di dalam dokumen tersebut |
+
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+## Kenapa Tampilannya Hanya Hitam Putih???
+
+Mari membiasakan diri dengan memisahkan penulisan struktur halaman web
+dengan style atau pemformatan halaman web.
+
+Karena yang dijelaskan hanyalah struktur, maka isinya hanya hitam putih saja.
+Nanti setelah kita belajar *styling* halaman web, baru tulisan dan layoutnya
+bisa semakin bagus.
+
+          </script>
+        </section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3>BY Fahri Firdausillah / fahrifirdaus.web.id</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
