@@ -1,0 +1,21 @@
+#content {
+	width: 960px;	
+	padding: 0 10px;
+}
+nav {
+	display: inline-block;
+	width: 200px;
+	position: fixed;
+	top: 10px;
+}
+div#main {
+	display: inline-block;
+	width: 700px;
+	position: relative;
+	left: 210px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+footer {
+	text-align: center;	
+}
