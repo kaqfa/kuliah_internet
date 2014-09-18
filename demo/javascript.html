@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Percobaan Javascript</title>
+	<script type="text/javascript">
+	function fungsiMuncul(){
+		var area = document.getElementById("area-muncul");
+		var teks = document.getElementById("inputTeks");
+		area.innerHTML = teks.value;
+	}
+	</script>
+	<script type="text/javascript" src="skripnya_javascript.js"></script>
+</head>
+<body>
+	<h2>Judul Programnya</h2>
+	<div>
+		<p>Tulisan sembarangan</p>
+		Inputkan teksnya: <input type="text" id="inputTeks" />
+		<button onclick="fungsiMuncul()">Klik untuk Tampil</button>
+		<div id="area-muncul"></div>
+	</div>
+	<div id="main-content"></div>
+	<div>
+		<p>Footer Aplikasi</p>
+	</div>
+
+</body>
+</html>
