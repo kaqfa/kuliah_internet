@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan Javascript</title>
+	<script type="text/javascript" 
+		src="bootstrap/js/jquery-1.11.1.min.js"></script>
+	<style type="text/css">
+	label{width: 200px; text-align: right; display: inline-block; padding: 5px 5px;}
+	strong{color: blue;}
+	#tampil-hasil{display: none;}
+	</style>
+	<script type="text/javascript">
+	function hitungTotal(){
+		var nama = $("#nama");
+		var jml = $("#jmlBeli");
+		var tipe = $("#tipe");
+		var harga = $("#harga");
+
+		var total = jml.val() * harga.val();
+		var diskon = 0;
+
+		if(tipe.val() == "1"){
+			diskon = 0.05;
+		} else if(tipe.val() == "2"){
+			diskon = 0.1;
+		}
+
+		total = total - (total*diskon);
+
+		var textHasil = "Barang yang dibeli adalah "+nama.val()+"<br>";
+		textHasil += " sebanyak <strong>"+jml.val()+"</strong> buah<br>";
+		textHasil += " dengan harga "+harga.val()+"<br>";
+		textHasil += " sehingga totalnya adalah "+total;
+
+		$("#tampil-hasil").html(textHasil).show(1000);
+	}
+	</script>
+</head>
+<body>
+	<form method="post">
+		<p>
+			<label>Nama Barang</label>
+			<input type="text" id="nama" />
+		</p>
+		<p>
+			<label>Jumlah Beli</label>
+			<input type="text" id="jmlBeli" />
+		</p>
+		<p>
+			<label>Tipe Barang</label>
+			<select id="tipe">
+				<option value="1">Elektronik</option>
+				<option value="2">Rumah Tangga</option>
+				<option value="3">Lain-lain</option>
+			</select>
+		</p>
+		<p>
+			<label>Harga Barang</label>
+			<input type="text" id="harga" />
+		</p>
+		<p>
+			<label>&nbsp;</label>
+			<input type="button" id="hitung" onclick="hitungTotal()"
+			 value="Hitung" />
+		</p>
+	</form>
+	<div id="tampil-hasil"></div>
+</body>
+</html>
