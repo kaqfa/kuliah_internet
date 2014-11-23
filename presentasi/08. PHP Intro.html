@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Pemrograman Internet [8]</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<style type="text/css">
+			.reveal code{ color: #a8ffb0; font-size: 18pt;}
+			.reveal table {
+			  margin: auto;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			}
+
+			.reveal table th {
+			  font-weight: bold;
+			}
+
+			.reveal table th,
+			.reveal table td {
+			  text-align: left;
+			  padding: 0.2em 0.5em 0.2em 0.5em;
+			  border-bottom: 1px solid;
+			}
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Pemrograman Internet</h1>
+					<h3>Bahasa Pemrograman PHP</h3>
+					<p>
+						<small>Created by <a href="http://fahrifirdaus.web.id">Fahri Firdausillah</a> </small>
+					</p>
+				</section>
+
+<section data-markdown data-markdown data-separator="^---$" data-vertical="^--$">
+	<script type="text/template">
+## PHP is PHP
+
+- PHP merupakan bahasa pemrograman *scripting* yang dapat digunakan untuk mengembangkan
+  aplikasi berbasis web.
+- PHP singkatan rekursif dari *PHP Hypertext Preprocessor*.
+- PHP adalah bahasa pemrograman yang sangat mudah digunakan untuk mengembangkan web.
+
+--
+
+## What makes it easy
+
+- **variabel dinamis**: tidak perlu deklarasi variabel
+- **prosedural &amp; OO**: bisa menggunakan kedua paradigma atau penggabungan
+- **small to zero config**: tinggal taruh script di direktori htdocs
+- **seperti menulis di console**: tidak perlu mendeklarasikan object untuk manipulasi
+	tinggal ditulis saja seperti menampilkan output di console.
+
+---
+
+## Dasar Penulisan PHP
+
+- Pastikan: 
+	- semua file diletakkan di folder htdocs / www (sesuai konfigurasi server).
+	- semua file yang mengandung kode PHP berekstensi *.php.
+	- sevice apache berjalan.
+- Kode PHP harus ditulis di antara tag ```<?php``` dan ```?>```
+- Syntax PHP (masih) sama dengan bahasa C.
+
+--
+
+## Contoh File Dasar PHP
+
+```php
+<?php
+	echo "selamat datang di pemrograman PHP";
+?>
+```
+
+Simpan file dengan nama ```hello.php``` dalam sebuah folder dalam htdocs.
+
+--
+
+## Penggunaan variabel
+
+```php
+<?php
+$nama = "Fahri Firdausillah";
+echo "selamat datang ".$nama;
+$rupiah = 10500;
+echo "Nilai rupiah terhadap dolar hari ini adalah ".$rupiah;
+?>
+```
+
+- variabel tidak perlu dideklarasikan namun selalu diawali dengan tanda "```$```".
+- operator konkatenasi string pada PHP menggunakan "```.```" (titik).
+
+---
+
+## Menggabungkan dengan HTML
+
+- File PHP adalah teks file murni sama seperti file HTML, bedanya jika ingin memberitahu
+  parser bahwa dalam sebuah file terdapat kode PHP, kita harus memberikan ekstensi *.php
+  pada file tersebut.
+- Selanjutnya parser akan menampilkan (print) semua kode yang ada dalam file tersebut, kecuali
+  yang ada dalam tag PHP (```<?php ?>```).
+- Semua kode yang ada dalam tag PHP tersebut akan dievaluasi terlebih dahulu sesuai logika
+  pemrograman, dan hanya akan menampilkan nilai yang di-```echo``` atau di-```print```.
+
+--
+
+## PHP &amp; HTML Sedang Akur
+
+```php
+<html>
+	<head>
+		<title>PHP &amp; HTML Sedang Akur</title>
+	</head>
+	<body>
+		<h1>Ini ditulis langsung dengan HTML</h1>
+		<?php
+			$bahasa = "PHP";
+			echo "<h1>Sedangkan ini ditulis dengan ".$bahasa."</h1>";
+		?>
+	</body>
+</html>
+```
+
+---
+
+## Menyusun Web dengan HTML
+
+### HTML 5 Standard dan Komponen-komponennya
+
+---
+
+## HTML5 vs HTML4
+
+- HTML5 merupakan versi terbaru dari standard bahasa HTML, 
+- sedangkan HTML4 merupakan standard HTML yang cukup banyak digunakan hingga saat ini
+- HTML 5 banyak menitik beratkan pada peningkatan yang dimiliki oleh HTML UI dan UX
+- HTML5 memiliki banyak tag baru seperti section, ```article```, ```header```, ```nav```, ```canvas```,
+	```video``` dan lain sebagainya.			
+- Juga ada beberapa tag yang dihapuskan dari standard HTML5 seperti ```frame```, ```marque```, 
+	```blink```, dan ```font```.
+
+---
+
+## Aturan Standard Penulisan HTML5
+
+- HTML5 harus diawali dengan <!DOCTYPE html>
+- Kebanyakan tag HTML berpasangan seperti :
+	- ```<div> … </div>```
+	- ```<a href="…"> … </a>```
+- Jika ada tag yang tidak berpasangan maka cara menulisnya adalah :
+	- ```<br /> bukan <br>```
+	- ```<img src="…" /> bukan <img src="…">```
+- Setiap tag dapat memiliki attribut yang ditulis menggunakan huruf kecil dan nilainya diapit apostrof
+	- ```<img src="…" />, <a href="…"> … </a>```
+	- ```<link href="…"> … </link>, <p class="…"> … </p>```
+
+--
+
+### Aturan Standard Penulisan HTML5 (cont’d)		
+
+- Semua yang berhubungan dengan format tampilan, dikendalikan dengan menggunakan CSS.
+- Sehingga, beberapa tag berikut sudah dinyatakan obselete :
+	- `<b>`, `<i>`, `<center>`, `<big>`, `<font>`, dan tag format sejenis lainnya.
+- Tag `<frame>` dan `<marque>` juga sudah dianggap obselete karena merusak arti (meaning) dari HTML.
+- Namun karena standard HTML5 masih belum selesai, dan juga tidak ada browser yang 
+	mensupport penuh HTML5, untuk masa transisi tag-tag tersebut mungkin masih bisa 
+	diterjemahkan dengan baik oleh browser.
+
+--
+
+### Aturan Standard Penulisan HTML5 (cont’d)
+
+Sebuah halaman HTML paling sederhana mengandung tag ```<html>```, ```<header>```, dan ```<body>```
+
+```xml
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title> .:Judul Website:. </title>
+</head>
+
+<body>
+<div>
+  <p>The first paragraph of an HTML page.</p>
+  <p>Here goes the second one.</p>
+</div>
+</body>
+
+</html>
+```
+
+	</script>
+</section>
+
+<section>
+	<h2>Elemen <code>Body</code></h2>
+	<ul>
+		<li>Elemen <code>&lt;body&gt; … &lt;/body&gt;</code> merupakan letak elemen visual yang ditampilkan oleh browser.</li>
+		<li>Setiap elemen bisa diberikan atribut <code>"id"</code> dan <code>"class"</code>.</li>
+		<li>Beberapa contoh elemen yang bisa dituliskan di dalam elemen body adalah :</li>
+	</ul>
+
+	<table>
+		<tr>
+			<th>Tag Elemen</th>
+			<th>Kegunaan</th>
+		</tr>
+		<tr>
+			<td><code>&lt;div&gt; … &lt;/div&gt; </code></td>
+			<td>Container elemen lain pada satu baris sendiri</td>
+		</tr>
+		<tr>
+			<td><code>&lt;p&gt; … &lt;/p&gt; </code></td>
+			<td>Container text 1 paragraf</td>
+		</tr>
+		<tr>
+			<td><code>&lt;nav&gt; … &lt;/nav&gt; </code></td>
+			<td>Container untuk navigasi</td>
+		</tr>
+		<tr>
+			<td><code>&lt;h1&gt; … &lt;/h1&gt; </code></td>
+			<td>Text header (judul) tersedia dari H1 s/d H6</td>
+		</tr>
+		<tr>
+			<td><code>&lt;article&gt; … &lt;/article&gt; </code></td>
+			<td>Container untuk bagian artikel</td>
+		</tr>
+		<tr>
+			<td><code>&lt;header&gt; … &lt;/header&gt; </code></td>
+			<td>Container untuk bagian header</td>
+		</tr>
+		<tr>
+			<td><code>&lt;footer&gt; … &lt;/footer&gt; </code></td>
+			<td>Container untuk bagian footer</td>
+		</tr>
+	</table>
+
+</section>
+
+				<section data-markdown>
+          <script type="text/template">
+## Elemen `Body` (cont)
+
+| Tag Elemen    			| Kegunaan      |
+| -------------				|:-------------:|
+| `<ol> … </ol>`     	| (ordered list) Membuat numbering |
+| `<ul> … </ul>`     	| (unordered list) Membuat bullet |
+| `<li> … </li>` 			| List yang digunakan pada UL dan OL |
+| `<table> </table>` 	| Membuat tabel |
+| `<tr> … </tr>` 			| Menyisipkan baris pada tabel |
+| `<td> … </td>` 			| Menyisipkan kolom pada tabel |
+| `<br />` 						| Ganti baris |
+| `<hr />` 						| Menyisipkan garis horizontal |
+| `<a href=“”>…</a>` 	| Membuat link pada teks atau gambar |
+| `<img src=“” />` 		| Memasukkan gambar pada halaman web |
+| `<pre> … </pre>` 		| Teks di antara tag tersebut ditampilkan tanpa format |
+
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+## Elemen `Head`
+
+- Sebaliknya elemen <head> … </head> digunakan untuk menuliskan elemen yang 
+	tidak ditampilkan secara visual oleh web browser, namun informasinya penting
+	untuk perangkat lunak lain seperti web-crawler.
+- Beberapa contoh elemen yang bisa dituliskan di dalam elemen header adalah :
+
+-----
+
+| Tag Elemen    			| Kegunaan      |
+| -------------				|:-------------:|
+| `<title> … </title>`     	| Mendefinisikan judul dari dokumen |
+| `<link> … </link>`     		| Biasanya digunakan untuk memasukkan CSS |
+| `<meta> … </meta>`     		| Mendefinisikan metadata halaman tersebut |
+| `<script> … </ script>`   | Biasanya digunakan untuk memasukkan JS |
+| `<style> … </syle>`     	| Menuliskan CSS di dalam dokumen tersebut |
+
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+## Kenapa Tampilannya Hanya Hitam Putih???
+
+Mari membiasakan diri dengan memisahkan penulisan struktur halaman web
+dengan style atau pemformatan halaman web.
+
+Karena yang dijelaskan hanyalah struktur, maka isinya hanya hitam putih saja.
+Nanti setelah kita belajar *styling* halaman web, baru tulisan dan layoutnya
+bisa semakin bagus.
+
+          </script>
+        </section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3>BY Fahri Firdausillah / fahrifirdaus.web.id</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
