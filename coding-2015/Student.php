@@ -2,10 +2,11 @@
 include "koneksi.php";
 
 class Student extends DBAccess{
-	private $nim;
+	public $nim;
 	public $nama;
-	protected $alamat;
-	var $ipk;
+	public $alamat;
+	public $ipk;
+    public $status;
 
 	// constructor Sama seperti nama class
 	function __construct($nim = null, $nama = null, $alamat = null, $ipk = null){
@@ -20,16 +21,27 @@ class Student extends DBAccess{
 		}
 	}
 
+    public function insertMhsByArray($inputArr){
+      $this->insertMhs($inputArr['nim'], $inputArr['nama'], $inputArr['alamat'], $inputArr['ipk']);
+    }
+
+    public function insertMhs($nim, $nama, $alamat, $ipk){
+      $statement = $this->db->prepare("insert into mahasiswa values (?, ?, ?, ?)");
+      $statement->execute(array($nim, $nama, $alamat, $ipk));
+    }
+
 	public function getAllMhs(){
 		$rs = $this->db->query("select * from mahasiswa where status = 1");
 		return $rs->fetchAll(PDO::FETCH_OBJ);
 	}
 
 	public function getMhsFromDB($nim){
-
+      $statement = $this->db->prepare("select * from mahasiswa where status = 1 and nim = ?");
+      $statement->execute(array($nim));
+      $statement->fetch(PDO::FETCH_OBJ);
 	}
 
-	protected function status(){
+	protected function level(){
 		if($this->ipk > 3.5)
 			return "Cumlaude";
 		else if($this->ipk > 3)
