@@ -17,7 +17,7 @@ include "koneksi.php";
       <?php include "./menu_pinggir.php"; ?>
 
       <!-- Content Wrapper. Contains page content -->
-      <?php include "./table_mhs.php"; ?>
+      <?php include "./form_mhs.php"; ?>
 
       <footer class="main-footer">
         <div class="pull-right hidden-xs">

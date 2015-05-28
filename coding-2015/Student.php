@@ -1,5 +1,4 @@
 <?php
-include "koneksi.php";
 
 class Student extends DBAccess{
 	public $nim;
@@ -32,16 +31,18 @@ class Student extends DBAccess{
 
 	public function getAllMhs(){
 		$rs = $this->db->query("select * from mahasiswa where status = 1");
-		return $rs->fetchAll(PDO::FETCH_OBJ);
+        $res = $rs->fetchAll(PDO::FETCH_CLASS, 'Student');
+		return $res;
 	}
 
 	public function getMhsFromDB($nim){
       $statement = $this->db->prepare("select * from mahasiswa where status = 1 and nim = ?");
       $statement->execute(array($nim));
-      $statement->fetch(PDO::FETCH_OBJ);
+      $statement->setFetchMode(PDO::FETCH_CLASS, 'Student');
+      return $statement->fetch();
 	}
 
-	protected function level(){
+	public function level(){
 		if($this->ipk > 3.5)
 			return "Cumlaude";
 		else if($this->ipk > 3)
@@ -51,6 +52,11 @@ class Student extends DBAccess{
 		else
 			return "Not Enough";
 	}
+
+    public function getStatus(){
+        $status = array('Aktif', 'Non Aktif');
+        return $status[$this->status];
+    }
 
 	public function showProfile(){
 		echo "NIM : ".$this->nim."<br />";

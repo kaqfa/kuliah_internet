@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+ <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
@@ -29,17 +29,29 @@
                   <th>Alamat</th>
                   <th>IPK</th>
                   <th>Status</th>
+                  <th>Action</th>
                 </tr>
               </thead>
               <tbody>
+               <?php
+                include "Student.php";
+                $stud = new Student();
+
+                $data = $stud->getAllMhs();
+                foreach($data as $mhs){
+                ?>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0</td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
+                  <td><?php echo $mhs->nim; ?></td>
+                  <td><?php echo $mhs->nama; ?></td>
+                  <td><?php echo $mhs->alamat; ?></td>
+                  <td><?php echo $mhs->ipk; ?> - (<?php echo $mhs->level()?>)</td>
+                  <td><?php echo $mhs->getStatus(); ?></td>
+                  <td>
+                      [<a href="edit_mhs.php?nim=<?php echo $mhs->nim; ?>">Edit</a>]
+                      [<a href="delete_mhs.php?nim=<?php echo $mhs->nim; ?>">Delete</a>]
+                  </td>
                 </tr>
+                <?php } ?>
               </tbody>
               <tfoot>
                 <tr>
@@ -48,6 +60,7 @@
                   <th>Alamat</th>
                   <th>IPK</th>
                   <th>Status</th>
+                  <th>Action</th>
                 </tr>
               </tfoot>
             </table>
