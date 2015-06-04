@@ -37,14 +37,14 @@
                 include "Student.php";
                 $stud = new Student();
 
-                $data = $stud->getAllMhs();
+                $data = $stud->getAllMhs(true);
                 foreach($data as $mhs){
                 ?>
                 <tr>
-                  <td><?php echo $mhs->nim; ?></td>
+                  <td><?=$mhs->nim;?></td>
                   <td><?php echo $mhs->nama; ?></td>
                   <td><?php echo $mhs->alamat; ?></td>
-                  <td><?php echo $mhs->ipk; ?> - (<?php echo $mhs->level()?>)</td>
+                  <td><?php echo $mhs->ipk; ?> - (<?php echo $mhs->level(); ?>)</td>
                   <td><?php echo $mhs->getStatus(); ?></td>
                   <td>
                       [<a href="edit_mhs.php?nim=<?php echo $mhs->nim; ?>">Edit</a>]
