@@ -2,6 +2,13 @@
 include_once("koneksi.php");
 
 class Student extends DBAccess{
+	static $cols = array('nim'=>'nim',
+						'nama'=>'nama',
+						'alamat'=>'alamat',
+						'ipk'=>'ipk',
+						'status'=>'status');
+	static $table = 'mahasiswa';
+
 	public $nim;
 	public $nama;
 	public $alamat;
@@ -28,16 +35,18 @@ class Student extends DBAccess{
     }
 
     public function insertMhs($nim, $nama, $alamat, $ipk){
-      $statement = $this->db->prepare("insert into mahasiswa values (?, ?, ?, ?)");
+      $statement = $this->db->prepare("insert into ".Student::$table."
+	  										values (?, ?, ?, ?)");
       $statement->execute(array($nim, $nama, $alamat, $ipk));
     }
 
 	public function getAllMhs($includeNonActive = false){
 
 		if($includeNonActive == true)
-			$rs = $this->db->query("select * from mahasiswa");
+			$rs = $this->db->query("select * from ".Student::$table);
 		else
-			$rs = $this->db->query("select * from mahasiswa where status = 1");
+			$rs = $this->db->query("select * from mahasiswa where
+							".Student::$cols['status']." = 1");
 
         $res = $rs->fetchAll(PDO::FETCH_CLASS, 'Student');
 		return $res;

@@ -1,11 +1,5 @@
 <?php
 include "koneksi.php";
-if((!isset($_COOKIE['username'])) || strlen($_COOKIE['username']) < 1 ){
-    // header("location:");
-
-    echo "<h1>Anda belum login</h1>";
-    print_r($_COOKIE);
-} else {
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,11 +13,11 @@ if((!isset($_COOKIE['username'])) || strlen($_COOKIE['username']) < 1 ){
 
       <?php include "./admin-template/header.php"; ?>
 
+      <div style="min-height: 1036px;" class="content-wrapper">
+      </div>
+
       <!-- Left side column. contains the logo and sidebar -->
       <?php include "./menu_pinggir.php"; ?>
-
-      <!-- Content Wrapper. Contains page content -->
-      <?php include "./table_mhs.php"; ?>
 
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
@@ -37,9 +31,6 @@ if((!isset($_COOKIE['username'])) || strlen($_COOKIE['username']) < 1 ){
       <?php include "./admin-template/control_side.php"; ?>
     </div><!-- ./wrapper -->
 
-
     <?php include "./admin-template/footer_script.php"; ?>
-
   </body>
 </html>
-<?php } ?>

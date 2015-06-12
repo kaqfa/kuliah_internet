@@ -26,4 +26,12 @@
       "bAutoWidth": false
     });
   });
+
+  function openmodal(){
+     $.ajax({
+        url: "modals.php",
+      }).done(function(data) {
+        $(".content-wrapper").html(data);
+      });
+   }
 </script>

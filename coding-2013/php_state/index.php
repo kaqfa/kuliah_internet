@@ -8,7 +8,7 @@
 		<?php
 			if( isset($_COOKIE['name']) ){
 				print_r($_COOKIE);
-				echo $_COOKIE['name'];
+//				echo $_COOKIE['name'];
 			} else {
 				echo "belum ada cookie tersimpan";
 			}
