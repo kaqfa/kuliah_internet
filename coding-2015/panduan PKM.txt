@@ -1,0 +1,129 @@
+BATHARA ARGAN SAMUDRA ASMARA	Absensi Online	PKM-T
+LATHIEF QODRI RAMADHANI			Absensi Online	PKM-T
+RIZKY SAHARI HARSYA				Absensi Online	PKM-T
+
+FEBRIAN RAMADHAN LUTHFIADONI	Siakad TA	PKM-KC
+HADIYAN ACHMADIN DWIYUSNA		Siakad TA	PKM-KC
+DIMAS PUTRA AJI PAMUNGKAS		Siakad TA	PKM-KC
+
+ALWIN RUDI HANDOKO	Pengawasan Tenaga Kerja	PKM-KC
+RIDHO PANDUSAKTI	Pengawasan Tenaga Kerja	PKM-KC
+
+ANIS SAEFUDDIN		Booking Sek	PKM-KC
+ERA TRI WAHYUNI		Booking Sek	PKM-KC
+ISFINA NAHARIYANI	Booking Sek	PKM-KC
+
+NUR WAHID			Tours to Borneo	PKM-KC
+ADITYA KURNIAWAN	Tours to Borneo	PKM-KC
+ARIEANSYAH			Tours to Borneo	PKM-KC
+
+DWI BAGUS HAPTIARTO			TelaBelang	PKM-T
+RAMADHANTI SUKMA PRIYANDINI	TelaBelang	PKM-T
+MUKHLISIN					TelaBelang	PKM-T
+
+TIAZ ISKANDAR MUDA			Koperasi Batik	PKM-T
+WAHYU MUHAMMAD KURNIAWAN	Koperasi Batik	PKM-T
+Fatma Eranisa				Koperasi Batik	PKM-T
+
+ANIS KHAERINA		Go Jepret2	PKM-KC
+TEGUH PRIYAMBODO	Go Jepret2	PKM-KC
+DEWI PARTIMAH		Go Jepret2	PKM-KC
+
+MEIWAN MP			iUsaha	PKM-T
+MIFTACHUL IZZA		iUsaha	PKM-T
+BAYU AJI WICAKSONO	iUsaha	PKM-T
+
+WAHYU DAROJATULLOH	bukanberitabiasa	PKM-KC
+ROFI' SYAIFUL AMIN	bukanberitabiasa	PKM-KC
+SIGIT ARDIANTO		bukanberitabiasa	PKM-KC
+
+
+
+PKM T
+-----
+- Inti dari PKMT adalah menyelesaikan permasalahan mitra (partner),
+  jadi proposal lebih ditonjolkan ke arah permasalahan mitra yang akan
+  diberikan solusi
+
+- Format Font: Times New Roman (12pt) jarak baris 1.15
+- Margin halaman : left = 3, top = 3, right = 2, bottom = 2
+- Maks Halaman 6-10 (tidak termasuk Halaman cover, Pengesahan, Daftar Isi, 
+  Ringkasan, Daftar Gambar, serta lampiran)
+- Maks dana = 12.500.000
+- Struktur Proposal:
+  + Cover
+  + Pengesahan
+  + Daftar Isi
+  + Ringkasan
+  + Bab 1. Pendahuluan
+    * Latar Belakang (Bercerita permasalahn mitra)
+    * Rumusan Masalah (Ringkasan latar belakang dalam poin)
+    * Tujuan (Jawaban atas permasalahan)
+    * Luaran yang Diharapkan (Gambaran produk yang dihasilkan)
+    * Manfaat (Efek samping setelah proyek berhasil)
+  + Bab 2. Tinjauan Pustaka
+    * jelaskan beberapa teknologi yang mendukung proyek ini
+    * jelaskan beberapa contoh aplikasi yang pernah dibuat, 
+      dan bedanya dengan aplikasi kita
+    * referensi sebaiknya dari jurnal & buku, hindari web / blog
+  + Bab 3. Metode Pelaksanaan
+    * Jelaskan langkah-langkah pengerjaan penelitian mulai dari 
+      perencanaan, pengumpulan kebutuhan, desain perancangan, 
+      pembuatan aplikasi, evaluasi aplikasi, hingga sosialisasi
+    * lebih baik jika dibuat flow-chart-nya
+  + Bab 4. Biaya dan Jadwal
+    * Garis besar rancangan biaya dengan memaksimalkan dana hingga 12,5 juta
+    * Tabel jadwal kegiatan selama 6 - 8 bulan pengerjaan penelitian
+  + Daftar Pustaka
+  + Lampiran
+    * Biodata (Ketua, anggota, dosen pembimbing, dan semua ditanda tangani)
+    * Justifikasi Anggaran (rincian biaya dari rancangan biaya di bab 4)
+    * Susunan Organisasi Tim (pembagian kerja tim)
+    * Surat Pernyataan Ketua
+    * Surat kesediaan mitra
+    * Gambaran Teknologi yang Dikembangkan
+    * Denah Detail Lokasi Mitra
+ 
+
+ PKM KC
+ ------
+- Inti dari PKM KC adalah membuat produk yang sebelumnya belum ada
+  dan bermanfaat untuk masyarakat ke depannya, karenanya proposal
+  PKM KC, ditonjolkan pada bagian manfaat untuk masyarakat.
+
+- Format Font: Times New Roman (12pt) jarak baris 1.15
+- Margin halaman : left = 3, top = 3, right = 2, bottom = 2
+- Maks Halaman 6-10 (tidak termasuk Halaman cover, Pengesahan, Daftar Isi, 
+  Ringkasan, Daftar Gambar, serta lampiran)
+- Maks dana = 12.500.000
+- Struktur Proposal:
+  + Cover
+  + Pengesahan
+  + Daftar Isi
+  + Ringkasan
+  + Bab 1. Pendahuluan
+    * Latar Belakang (Bercerita permasalahan pada masyarakat)
+    * Rumusan Masalah (Ringkasan latar belakang dalam poin)
+    * Tujuan (Jawaban atas permasalahan)
+    * Luaran yang Diharapkan (Gambaran produk yang dihasilkan)
+    * Manfaat (Penjelasan beberapa poin manfaat setelah aplikasi jadi)
+  + Bab 2. Tinjauan Pustaka
+    * jelaskan beberapa teknologi yang mendukung proyek ini
+    * jelaskan beberapa contoh aplikasi yang pernah dibuat, 
+      dan bedanya dengan aplikasi kita
+    * referensi sebaiknya dari jurnal & buku, hindari web / blog
+  + Bab 3. Metode Pelaksanaan
+    * Jelaskan langkah-langkah pengerjaan penelitian mulai dari 
+      perencanaan, pengumpulan kebutuhan, desain perancangan, 
+      pembuatan aplikasi, evaluasi aplikasi, hingga sosialisasi
+    * lebih baik jika dibuat flow-chart-nya
+  + Bab 4. Biaya dan Jadwal
+    * Garis besar rancangan biaya dengan memaksimalkan dana hingga 12,5 juta
+    * Tabel jadwal kegiatan selama 6 - 8 bulan pengerjaan penelitian
+  + Daftar Pustaka
+  + Lampiran
+    * Biodata (Ketua, anggota, dosen pembimbing, dan semua ditanda tangani)
+    * Justifikasi Anggaran (rincian biaya dari rancangan biaya di bab 4)
+    * Susunan Organisasi Tim (pembagian kerja tim)
+    * Surat Pernyataan Ketua
+    * Gambaran Teknologi yang Dikembangkan

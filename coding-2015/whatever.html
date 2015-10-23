@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Biggest Header</h1>
+	<h2>Bigger Header</h2>
+	<h3>Big Header</h3>	
+
+	<ul>
+	<?php
+		$name = array("Ahmad", 'Ali', 'Umar', 'Yohanes');
+		for ($i=0; $i < 4; $i++) { 
+			echo "<li>$name[$i]</li>";
+		}
+	?>
+	</ul>	
+
+	<ol>
+		<?php
+			$name = array("Ahmad", 'Ali', 'Umar', 'Yohanes');
+			for ($i=0; $i < 4; $i++) { 
+				echo "<li>$name[$i]</li>";
+			}
+		?>
+	</ol>
+</body>
+</html>
