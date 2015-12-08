@@ -7,7 +7,7 @@ try {
 
   $sql = "SELECT * FROM offices";
   $res = $db->query($sql);
-  foreach($res as $row){  	
+  foreach($res as $row){
   	//print_r($row);
   	echo $row['country'].'<br />';
   }
