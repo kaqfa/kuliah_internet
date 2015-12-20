@@ -7,6 +7,7 @@ else
     $data = array('nim'=>'', 'fullname'=>'', 'address'=>'', 'gpa'=>'', 'status'=>'');
 // print_r($data);
 ?>
+
 <h1 class="page-header">
     Student Form
 </h1>

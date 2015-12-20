@@ -1,6 +1,3 @@
-<?php
-if(isset($_COOKIE['username']) && $_COOKIE['status'] == 'logged_in'){
-?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -32,7 +29,7 @@ if(isset($_COOKIE['username']) && $_COOKIE['status'] == 'logged_in'){
             <li><a href="#">Dashboard</a></li>
             <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
-            <li><a href="login_action.php?action=logout">Logout</a></li>
+            <li><a href="#">Help</a></li>
           </ul>
           <form class="navbar-form navbar-right">
             <input type="text" class="form-control" placeholder="Search...">
@@ -45,16 +42,6 @@ if(isset($_COOKIE['username']) && $_COOKIE['status'] == 'logged_in'){
 
       <div class="row row-offcanvas row-offcanvas-left">
 
-         <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
-
-            <ul class="nav nav-sidebar">
-              <li class="active"><a href="index.php">Dashboard</a></li>
-              <li><a href="index.php?page=student_input">Student Form</a></li>
-              <li><a href="index.php?page=student_list">Student List</a></li>
-            </ul>
-
-        </div><!--/span-->
-
         <div class="col-sm-9 col-md-10 main">
 
           <!--toggle sidebar button-->
@@ -62,18 +49,24 @@ if(isset($_COOKIE['username']) && $_COOKIE['status'] == 'logged_in'){
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
           </p>
 
-          <?php
-            if(isset($_GET['page']) &&
-               ($_GET['page'] == 'student_input' || $_GET['page'] == 'student_edit'))
-                include "student_form.php";
-            elseif (isset($_GET['page']) && $_GET['page'] == 'student_list')
-                include "student_list.php";
-            else
-                include "dashboard.php";
+        <form method="post" action="login_action.php">
+          <div class="form-group">
+            <label for="">Username</label>
+            <input type="text" name="username" class="form-control" placeholder="Username">
+          </div>
+          <div class="form-group">
+            <label >Password</label>
+            <input type="password" name="password" class="form-control" placeholder="Password">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="remember" value="1"> Remember Me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Login</button>
+        </form>
 
-            ?>
-
-      </div><!--/row-->
+          </div><!--/row-->
 	</div>
 </div><!--/.container-->
 
@@ -87,6 +80,3 @@ if(isset($_COOKIE['username']) && $_COOKIE['status'] == 'logged_in'){
 		<script src="../../admin_bs/js/scripts.js"></script>
 	</body>
 </html>
-<?php } else {
-    header('location:login.php');
-}
