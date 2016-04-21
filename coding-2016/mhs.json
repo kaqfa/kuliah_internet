@@ -1,0 +1,9 @@
+[
+    {"nim":"A123", "nama":"Andi", "alamat":"Semarang", "ipk":3.7, "phone":"012345"},
+    {"nim":"A234", "nama":"Ali", "alamat":"Jepara", "ipk":3.8, "phone":"023456"},
+    {"nim":"B123", "nama":"Abu", "alamat":"Kudus", "ipk":3.5, "phone":"034567"},
+    {"nim":"B234", "nama":"Vera", "alamat":"Kendal", "ipk":3.2, "phone":"045678"},
+    {"nim":"C123", "nama":"Vina", "alamat":"Ungaran", "ipk":3.1, "phone":"056788"},
+    {"nim":"C234", "nama":"Vida", "alamat":"Pekalongan", "ipk":3.9, "phone":"056789"},
+    {"nim":"D123", "nama":"Naryo", "alamat":"Demak", "ipk":3.0, "phone":"076543"}
+]
