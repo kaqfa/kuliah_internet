@@ -1,6 +1,6 @@
 <?php include "arrays.php";
 
-$file = file_get_contents('mhs.json');
+$file = file_get_contents('http://localhost/internet/coding-2016/mahasiswa-json.php');
 $json = json_decode($file);
 ?>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@ $json = json_decode($file);
     <title>Manipulasi Array</title>
     <script type="text/javascript" src="bootstrap/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript">
-      
+
     </script>
 </head>
 <body>
