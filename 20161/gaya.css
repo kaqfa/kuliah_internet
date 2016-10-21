@@ -1,0 +1,27 @@
+h1 { color: #ff0000; text-transform: lowercase; }
+h3 {color: #0000ff; font-weight: bold; font-style: italic;}
+
+.big_blue {
+	color: #0000ff;
+	font-size: 17pt;
+	font-weight: bold;
+	background-color: pink;
+	padding: 5px;
+	border: 10px solid #000;
+}
+
+.dark_yellow {
+	background-color: black;
+	color: yellow;
+	font-size: 17pt;
+	font-weight: bold;
+	padding: 5px;
+	border: 10px dotted #ccc;
+	margin-left: 50px;
+}
+
+#site_title {
+	text-transform: uppercase;
+	font-size: 30pt;
+	border: 1px solid #666;
+}
