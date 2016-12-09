@@ -109,7 +109,7 @@
                     </div>                                        
                     <div class="form-group">
                       <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" onclick="addHistoryJq()" class="btn btn-primary">Calculate</button>
+                        <button type="submit" onclick="addHistory2()" class="btn btn-primary">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -120,7 +120,7 @@
               <div class="panel panel-warning">
                 <div class="panel-heading">Calculation History</div>
                 <div class="panel-body">
-                  <table class="table table-striped" id="calc_table">
+                  <table class="table table-striped" id="tabel_riwayat">
                     <tbody>
                       
                     </tbody>
@@ -139,12 +139,12 @@
                       <label for="inputPassword3" class="col-sm-2 control-label">
                       Tags (separated by comma)</label>
                       <div class="col-sm-10">
-                        <textarea name="alamat" id="tagText" class="form-control"></textarea>
+                        <textarea name="tagText" id="tagText" class="form-control"></textarea>
                       </div>
                     </div>                    
                     <div class="form-group">
                       <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" onclick="addTags()" class="btn btn-primary">Save the Tags</button>
+                        <button type="submit" onclick="" class="btn btn-primary">Save the Tags</button>
                       </div>
                     </div>
                   </div>
