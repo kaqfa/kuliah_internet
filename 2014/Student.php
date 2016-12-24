@@ -13,7 +13,7 @@ class Student extends DBAccess{
 	public $nama;
 	public $alamat;
 	public $ipk;
-    public $status;
+  public $status;
 
 	public $choiceStatus = array('Non Aktif', 'Aktif', 'Lulus', 'Meninggal', 'Cuti', 'Drop Out');
 

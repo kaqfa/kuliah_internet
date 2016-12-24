@@ -6,7 +6,10 @@
 </head>
 <body>
 	<h1>whatever you display in admin page</h1>
-	<h2><?php echo "current user:".$user; ?></h2>
-	<a href="process.php?action=logout">Logout</a>		
+	<h2><?php echo "current user:".$user['username']; ?></h2>
+	<ul>
+		<li><a href="admin.php?page=input_mhs">Input Mahasiswa</a></li>
+		<li><a href="process.php?action=logout">Logout</a></li>
+	</ul>
 </body>
 </html>

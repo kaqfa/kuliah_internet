@@ -1,6 +1,6 @@
-<?php
-session_start();
-require "../pdo/connection.php";
+<?php session_start();
+
+require "config.php";
 
 function loginCheck(){
 	global $db;
@@ -16,17 +16,18 @@ function loginCheck(){
 
 $login = loginCheck();
 
-if($_REQUEST['action']=='logout'){
+if($_GET['action']=='logout'){
 	session_destroy();
-	unset($_COOKIE['login']); // acceptable
-	setcookie('login', null, -1);	// better
+	// unset($_COOKIE['login']); // acceptable
+	// setcookie('login', null, -1);	// better
+	$_SESSION['message'] = 'Selamat anda berhasil logout';
 	header("location:login.php");
 } else if($login){
 	// User found and will be redirected to admin page
-	$_SESSION['admin'] = $login;
-	setcookie('login', $login['username']);
+	$_SESSION['login'] = $login;	
 	header("location:admin.php");
 } else {
 	// User not found and will be redirected to login page again
+	$_SESSION['message'] = 'Username &amp; Password tidak tepat';
 	header("location:login.php");	
 }
